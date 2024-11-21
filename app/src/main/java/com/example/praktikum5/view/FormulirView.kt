@@ -28,6 +28,7 @@ fun FormulirView(
     listJK: List<String>,
     onSubmitClicked: (MutableList<String>) -> Unit
 ){
+    var nim by remember { mutableStateOf("") }
     var nama by remember { mutableStateOf("") } //Tipe data string karena isi mutablenya
     var gender by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
@@ -39,6 +40,17 @@ fun FormulirView(
     Column(
         modifier = Modifier.fillMaxSize().padding(10.dp), horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        TextField(
+            value = nim,
+            onValueChange = {nim = it},
+            label = {
+                Text(text = "Nim")
+            },
+            placeholder = {
+                Text("Isi nim anda")
+            },
+            modifier = Modifier.fillMaxWidth().padding(5.dp)
+        )
         TextField(
             value = nama,
             onValueChange = {nama = it},
