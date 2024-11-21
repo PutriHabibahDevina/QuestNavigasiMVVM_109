@@ -35,7 +35,7 @@ fun FormulirView(
     var email by remember { mutableStateOf("") }
     var notelepon by remember { mutableStateOf("") }
 
-    var listData : MutableList<String> = mutableListOf(nama, gender, alamat, email, notelepon)
+    var listData : MutableList<String> = mutableListOf(nim, nama, gender, alamat, email, notelepon)
 
     Column(
         modifier = Modifier.fillMaxSize().padding(10.dp), horizontalAlignment = Alignment.CenterHorizontally
