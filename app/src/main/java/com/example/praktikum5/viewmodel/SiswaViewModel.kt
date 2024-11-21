@@ -17,11 +17,12 @@ class SiswaViewModel : ViewModel() {
     fun saveDataSiswa(ls: MutableList<String>){
         _statusUI.update { statusSaatIni -> //statusSaatIni isinya adalah sebuah model yaitu DataSiswa
             statusSaatIni.copy(
-                nama = ls[0],
-                gender = ls[1],
-                alamat = ls[2],
-                email = ls[3],
-                notelepon = ls[4],
+                nim = ls[0],
+                nama = ls[1],
+                gender = ls[2],
+                alamat = ls[3],
+                email = ls[4],
+                notelepon = ls[5],
             )
         }
     }
