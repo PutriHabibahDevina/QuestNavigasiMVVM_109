@@ -3,6 +3,7 @@ package com.example.praktikum5.view
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -38,8 +39,9 @@ fun FormulirView(
     var listData : MutableList<String> = mutableListOf(nim, nama, gender, alamat, email, notelepon)
 
     Column(
-        modifier = Modifier.fillMaxSize().padding(10.dp), horizontalAlignment = Alignment.CenterHorizontally
+        modifier = Modifier.fillMaxSize().padding(20.dp), horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Spacer(modifier = Modifier.padding(50.dp))
         TextField(
             value = nim,
             onValueChange = {nim = it},
