@@ -33,6 +33,7 @@ fun TampilDataView(
         TampilData(param = "Alamat", argu = uiState.alamat)
         TampilData(param = "Email", argu = uiState.email)
         TampilData(param = "No Telepon", argu = uiState.nama)
+        Spacer(modifier = Modifier.padding(10.dp))
         Button(onClick = onBackButton){
             Text(text = "Kembali")
         }
@@ -42,7 +43,7 @@ fun TampilDataView(
 @Composable
 fun TampilData(param: String, argu:String){
     Column (
-        modifier = Modifier.padding(16.dp)
+        modifier = Modifier.padding(10.dp)
     ){
         Row (
             modifier = Modifier.fillMaxWidth(),

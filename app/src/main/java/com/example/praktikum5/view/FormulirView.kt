@@ -111,6 +111,7 @@ fun FormulirView(
             modifier = Modifier.fillMaxWidth().padding(5.dp),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
+        Spacer(modifier = Modifier.padding(10.dp))
         Button(onClick = {
             onSubmitClicked(listData) //fungsi onClick akan diwakili oleh onSubmitClicked
         }) {
